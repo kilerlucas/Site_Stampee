@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/galerie.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+  href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Gloock&family=Share+Tech+Mono&display=swap"
+  rel="stylesheet">
+  <title>Galerie</title>
+</head>
+
+<body>
+  <header>
+    <div class="headerMessage">
+      <div>
+        <span class="headerMessage__text">FREE UK & Worldwide Postage and Packing on ALL MAIL BID AUCTIONS</span>
+        <div class="headerMessage__languageContainer">
+          <img src="../assets/world.svg" alt="" class="headerMessage__languageIcon">
+          <span class="headerMessage__languageText">FR</span>
+        </div>
+      </div>
+    </div>
+    <div class="headerContainer">
+      <nav>
+        <ul class="headerContainer__categories">
+          <li class="headerContainer__listItem"><a href="../../index.html">ACCUEIL</a></li>
+          <li class="headerContainer__listItem"><a href="#">À PROPORS</a>
+            <ul class="headerContainer__subCategories">
+              <li><a href="#">Notre team</a></li>
+              <li><a href="#">Infos</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Boutique</a></li>
+            </ul>
+          </li>
+          <li class="headerContainer__listItem"><a href="#">ENCHÈRES</a>
+            <ul class="headerContainer__subCategories">
+              <li><a href="#">Vendre</a></li>
+              <li><a href="#">Caractéristiques</a></li>
+              <li><a href="#">Prix</a></li>
+              <li><a href="#">Témoignages</a></li>
+            </ul>
+          </li>
+          <li class="headerContainer__listItem active"><a href="galerie.html">TIMBRES</a>
+        </ul>
+      </nav>
+      <a href="#"><img src="../assets/logo-3.png" alt="Logo" class="headerContainer__logo"></a>
+      <nav>
+        <ul class="headerContainer__profile">
+          <li class="headerContainer__listItem"><a href="#">SE CONNECTER</a></li>
+          <li class="headerContainer__listItem"><a href="#"><img src="../assets/search.svg" alt="find"></a></li>
+          <li class="headerContainer__listItem"><a href="#"><img src="../assets/help_FILL0_wght200_GRAD0_opsz48.svg"
+                alt="ask"></a></li>
+          <li class="headerContainer__listItem"><a href="#"><img src="../assets/shopping_cart_FILL0_wght200_GRAD0_opsz48.svg"
+                alt="buy"></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="headerModal">
+      <a href="#"><img src="../assets/logo-3.png" alt="Logo" class="headerContainer__logo"></a>
+      <button class="headerModal__btn"><img src="../assets/burgermenu.svg" alt="">
+      </button>
+      <nav class="headerModal__nav">
+        <ul class="headerModal__list">
+          <li class="headerModal__listItem"><a href="../../index.html">ACCUEIL</a></li>
+          <li class="headerModal__listItem">
+            <a href="#">À PROPORS</a>
+            <ul class="headerModal__subCategories">
+              <li><a href="#">Notre team</a></li>
+              <li><a href="#">Infos</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Boutique</a></li>
+            </ul>
+          </li>
+          <li class="headerModal__listItem">
+            <a href="#">ENCHÈRES</a>
+            <ul class="headerModal__subCategories">
+              <li><a href="#">Vendre</a></li>
+              <li><a href="#">Caractéristiques</a></li>
+              <li><a href="#">Prix</a></li>
+              <li><a href="#">Témoignages</a></li>
+            </ul>
+          </li>
+          <li class="headerModal__listItem"><a href="galerie.html">TIMBRES</a>
+            <li class="headerModal__listItem"><a href="#">SE CONNECTER</a></li>
+          </ul>
+          <ul>
+            <li class="headerModal__listItem"><a href="#"><img src="../assets/search.svg" alt="find"></a></li>
+            <li class="headerModal__listItem"><a href="#"><img src="../assets/help_FILL0_wght200_GRAD0_opsz48.svg"
+                  alt="ask"></a></li>
+            <li class="headerModal__listItem"><a href="#"><img src="../assets/shopping_cart_FILL0_wght200_GRAD0_opsz48.svg"
+                  alt="buy"></a></li>
+          </ul>          
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="storeContainer">
+      <div class="mobileFilter">
+        <button >Filtre</button>
+      </div>
+
+      <aside class="storeContainer__filter">
+
+        <div class="storeContainer__page"><a href="#">TIMBRE</a> / <a href="#">HISTOIRE</a> / <strong>CANADA</strong></div>
+
+        <div class="searchContainer">
+          <span class="searchContainer__results">
+            50 résultats
+          </span>
+          <form class="searchContainer__search">
+            <input type="text" placeholder="Recherche" name="search" class="searchContainer__input">
+            <button type="submit" class="searchContainer__button"><img src="../assets/search.svg" alt="find"></button>
+          </form>
+          <span class="searchContainer__clean">
+            Effacer tous les filtres
+          </span>
+        </div>
+
+        <h2 class="storeContainer__title">Filtrer par:</h2>
+
+        <form class="filterForm">
+          <div class="filterForm__rangeContainer">
+            <label class="filterForm__categoryTitle" for="price">PRIX <img src="../assets/up-arrow.svg" alt=""></label>
+            <input type="range" name="price" id="price" min="0" max="100" value="50" class="filterForm__rangeInput">
+            <div>
+              <span class="filterForm__rangePrice">$0</span>
+              <span class="filterForm__rangePrice">$10000</span>
+            </div>
+          </div>
+
+          <div class="filterForm__categorie">
+
+            <h3 class="filterForm__categoryTitle">CATÉGORIE <img src="../assets/up-arrow.svg" alt=""></h3>
+
+            <div class="filterForm_options">
+              <label class="filterForm_label">
+                <input type="checkbox" value="animals" class="filterForm_checkbox">
+                <span>
+                  Animaux <span>(33)</span>
+                </span>
+              </label>
+              <label class="filterForm_label">
+                <input type="checkbox" value="art">
+                <span>
+                  Arts <span>(46)</span>
+                </span>
+              </label>
+              <label class="filterForm_label">
+                <input type="checkbox" value="history" checked>
+                <span>
+                  Histoire <span>(29)</span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="filterForm__pays">
+            <h3 class="filterForm__categoryTitle">PAYS <img src="../assets/up-arrow.svg" alt=""></h3>
+            <div class="filterForm_options">
+              <label class="filterForm_label">
+                <input type="checkbox" value="canada" checked>
+                <span>
+                  Canada <span>(12)</span>
+                </span>
+              </label>
+              <label class="filterForm_label">
+                <input type="checkbox" value="france">
+                <span>
+                  France <span>(12)</span>
+                </span>
+              </label>
+              <label class="filterForm_label">
+                <input type="checkbox" value="uk">
+                <span>
+                  UK <span>(53)</span>
+                </span>
+              </label>
+              <label class="filterForm_label">
+                <input type="checkbox" value="eu">
+                <span>
+                  États-Unis <span>(13)</span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="filterForm__conditions">
+            <h3 class="filterForm__categoryTitle">CONDITIONS <img src="../assets/up-arrow.svg" alt=""></h3>
+            <div class="filterForm_options">
+              <label class="filterForm_label">
+                <input type="checkbox" value="neuf">
+                <span>
+                  Neuf <span>(12)</span>
+                </span>
+              </label>
+              <label class="filterForm_label">
+                <input type="checkbox" value="utilise">
+                <span>
+                  Utilisé <span>(2)</span>
+                </span>
+              </label>
+              <label class="filterForm_label">
+                <input type="checkbox" value="annule">
+                <span>
+                  Annulé <span>(3)</span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="filterForm__annee">
+            <h3 class="filterForm__categoryTitle">ANNÉE <img src="../assets/up-arrow.svg" alt=""></h3>
+            <div class="filterForm__anneeContainer">
+              <input type="text"><button>OK</button>
+            </div>
+          </div>
+          <div class="filterForm__encheres">
+            <h3 class="filterForm__categoryTitle">LES ENCHÈRES <img src="../assets/up-arrow.svg" alt=""></h3>
+
+            <div class="filterForm_options">
+              <label class="filterForm_label">
+                <input type="checkbox" value="direct">
+                <span>
+
+                  En Direct <span>(12)</span>
+                </span>
+              </label>
+              <label class="filterForm_label">
+                <input type="checkbox" value="ligne">
+                <span>
+
+                  En Ligne <span>(2)</span>
+                </span>
+              </label>
+            </div>
+          </div>
+        </form>
+      </aside>
+
+      <div class="gallery">
+        <div class="gallery__header">
+          <h2 class="gallery__headerTitle">Categorie </h2>
+          <p class="gallery__headerSubtitle">Timbres canadien de collection pour les passionnés de philatélie </p>
+        </div>
+
+        <div class="gallery__filterOptions">
+          <div class="gallery__optionContainer">
+            <img src="../assets/canada.png" alt="">
+            <span>
+              CAD
+            </span>
+          </div>
+          <div class="gallery__optionContainer">
+            <span>
+              Masquer Filtres
+            </span>
+            <img src="../assets/filter.png" alt="">
+          </div>
+          <div class="gallery__optionContainer">
+            <span>
+              Trier par: <strong>Pertinence</strong>
+            </span>
+            <img src="../assets/arrowdown.png" alt="">
+          </div>
+          <div class="gallery__optionContainer">
+            <img src="../assets/icons8-columns-48.png" alt="test">
+          </div>
+          <div class="gallery__optionContainer">
+            <img src="../assets/list.png" alt="">
+          </div>
+        </div>
+
+        <div class="gallery__pages">
+          <div class="gallery__pagesLabel">
+            <p>Lots Par Page: <span>12 | 24 | 48 | <strong>96</strong></span></p>
+          </div>
+          <div class="gallery__pagesContainer">
+            <button><img src="../assets/up-arrow.svg" alt="arrow1"></button>
+            <select name="page" >
+              <option value="1">1</option>
+            </select>
+            <span>of 1</span>
+            <button><img src="../assets/up-arrow.svg" alt="arrow"></button>
+          </div>
+        </div>
+
+        <div class="gallery__list">
+          <div class="galleryCard">
+            <div class="galleryCard__imgContainer">
+              <span class="galleryCard__cardCountry">CANADA</span>
+              <img src="../assets/01.jpg" alt="Annee 1" class="galleryCard__img">
+            </div>
+            <div class="galleryCard__textContainer">
+              <span class="galleryCard__name">Lot 185 (Express #6344)</span>
+              <span class="galleryCard__price">Est. £20 - £22</span>
+              <span class="galleryCard__description"># R79c Revenue Used VF Scott</span>
+              <button class="galleryCard__button">PLUS DE DÉTAILS</button>
+            </div>
+          </div>
+          <div class="galleryCard">
+            <div class="galleryCard__imgContainer">
+              <span class="galleryCard__cardCountry">CANADA</span>
+              <img src="../assets/02.jpg" alt="Annee 1" class="galleryCard__img">
+            </div>
+            <div class="galleryCard__textContainer">
+              <span class="galleryCard__name">Lot 185 (Express #6344)</span>
+              <span class="galleryCard__price"> Est. £20 - £22</span>
+              <span class="galleryCard__description"># R79c Revenue Used VF Scott</span>
+              <button class="galleryCard__button">PLUS DE DÉTAILS</button>
+            </div>
+          </div>
+
+          <div class="galleryCard">
+            <div class="galleryCard__imgContainer">
+              <span class="galleryCard__cardCountry">CANADA</span>
+              <img src="../assets/03.jpg" alt="Annee 1" class="galleryCard__img">
+            </div>
+            <div class="galleryCard__textContainer">
+              <span class="galleryCard__name">Lot 185 (Express #6344)</span>
+              <span class="galleryCard__price">Est. £20 - £22</span>
+              <span class="galleryCard__description"># R79c Revenue Used VF Scott</span>
+              <button class="galleryCard__button">PLUS DE DÉTAILS</button>
+            </div>
+          </div>
+          
+          <div class="galleryCard">
+            <div class="galleryCard__imgContainer">
+              <span class="galleryCard__cardCountry">CANADA</span>
+              <img src="../assets/04.jpg" alt="Annee 1" class="galleryCard__img">
+            </div>
+            <div class="galleryCard__textContainer">
+              <span class="galleryCard__name">Lot 185 (Express #6344)</span>
+              <span class="galleryCard__price">Est. £20 - £22</span>
+              <span class="galleryCard__description"># R79c Revenue Used VF Scott</span>
+              <button class="galleryCard__button">PLUS DE DÉTAILS</button>
+            </div>
+          </div>
+          
+          <div class="galleryCard">
+            <div class="galleryCard__imgContainer">
+              <span class="galleryCard__cardCountry">CANADA</span>
+              <img src="../assets/05.jpg" alt="Annee 1" class="galleryCard__img">
+            </div>
+            <div class="galleryCard__textContainer">
+              <span class="galleryCard__name">Lot 185 (Express #6344)</span>
+              <span class="galleryCard__price">Est. £20 - £22</span>
+              <span class="galleryCard__description"># R79c Revenue Used VF Scott</span>
+              <button class="galleryCard__button">PLUS DE DÉTAILS</button>
+            </div>
+          </div>
+          
+          <div class="galleryCard">
+            <div class="galleryCard__imgContainer">
+              <span class="galleryCard__cardCountry">CANADA</span>
+              <img src="../assets/06.jpg" alt="Annee 1" class="galleryCard__img">
+            </div>
+            <div class="galleryCard__textContainer">
+              <span class="galleryCard__name">Lot 185 (Express #6344)</span>
+              <span class="galleryCard__price">Est. £20 - £22</span>
+              <span class="galleryCard__description"># R79c Revenue Used VF Scott</span>
+              <button class="galleryCard__button">PLUS DE DÉTAILS</button>
+            </div>
+          </div>
+          
+          <div class="galleryCard">
+            <div class="galleryCard__imgContainer">
+              <span class="galleryCard__cardCountry">CANADA</span>
+              <img src="../assets/07.jpg" alt="Annee 1" class="galleryCard__img">
+            </div>
+            <div class="galleryCard__textContainer">
+              <span class="galleryCard__name">Lot 185 (Express #6344)</span>
+              <span class="galleryCard__price">Est. £20 - £22</span>
+              <span class="galleryCard__description"># R79c Revenue Used VF Scott</span>
+              <button class="galleryCard__button">PLUS DE DÉTAILS</button>
+            </div>
+          </div>
+          
+          <div class="galleryCard">
+            <div class="galleryCard__imgContainer">
+              <span class="galleryCard__cardCountry">CANADA</span>
+              <img src="../assets/08.jpg" alt="Annee 1" class="galleryCard__img">
+            </div>
+            <div class="galleryCard__textContainer">
+              <span class="galleryCard__name">Lot 185 (Express #6344)</span>
+              <span class="galleryCard__price">Est. £20 - £22</span>
+              <span class="galleryCard__description"># R79c Revenue Used VF Scott</span>
+              <button class="galleryCard__button">PLUS DE DÉTAILS</button>
+            </div>
+          </div>
+          
+          <div class="galleryCard">
+            <div class="galleryCard__imgContainer">
+              <span class="galleryCard__cardCountry">CANADA</span>
+              <img src="../assets/09.jpg" alt="Annee 1" class="galleryCard__img">
+            </div>
+            <div class="galleryCard__textContainer">
+              <span class="galleryCard__name">Lot 185 (Express #6344)</span>
+              <span class="galleryCard__price">Est. £20 - £22</span>
+              <span class="galleryCard__description"># R79c Revenue Used VF Scott</span>
+              <button class="galleryCard__button">PLUS DE DÉTAILS</button>
+            </div>
+          </div>
+          <div class="galleryCard">
+            <div class="galleryCard__imgContainer">
+              <span class="galleryCard__cardCountry">CANADA</span>
+              <img src="../assets/10.jpg" alt="Annee 1" class="galleryCard__img">
+            </div>
+            <div class="galleryCard__textContainer">
+              <span class="galleryCard__name">Lot 185 (Express #6344)</span>
+              <span class="galleryCard__price">Est. £20 - £22</span>
+              <span class="galleryCard__description"># R79c Revenue Used VF Scott</span>
+              <button class="galleryCard__button">PLUS DE DÉTAILS</button>
+            </div>
+          </div>
+          <div class="galleryCard">
+            <div class="galleryCard__imgContainer">
+              <span class="galleryCard__cardCountry">CANADA</span>
+              <img src="../assets/11.jpg" alt="Annee 1" class="galleryCard__img">
+            </div>
+            <div class="galleryCard__textContainer">
+              <span class="galleryCard__name">Lot 185 (Express #6344)</span>
+              <span class="galleryCard__price">Est. £20 - £22</span>
+              <span class="galleryCard__description"># R79c Revenue Used VF Scott</span>
+              <button class="galleryCard__button">PLUS DE DÉTAILS</button>
+            </div>
+          </div>
+          <div class="galleryCard">
+            <div class="galleryCard__imgContainer">
+              <span class="galleryCard__cardCountry">CANADA</span>
+              <img src="../assets/12.jpg" alt="Annee 1" class="galleryCard__img">
+            </div>
+            <div class="galleryCard__textContainer">
+              <span class="galleryCard__name">Lot 185 (Express #6344)</span>
+              <span class="galleryCard__price">Est. £20 - £22</span>
+              <span class="galleryCard__description"># R79c Revenue Used VF Scott</span>
+              <button class="galleryCard__button">PLUS DE DÉTAILS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="contact">
+      <p class="contact__title">Vous avez besoin d'aide? Notre équipe est là pour vous aider</p>
+      <p class="contact__description">Nos heures d'ouverture sont du lundi au vendredi,<br>de 9h00 à 17h30 heure du Royaume-Uni.
+      </p>
+      <a class="contact__link" href="#">Contactez-nous</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer__topBar">
+      <h3 class="footer__topBarTitle">Suivez-nous</h3>
+      <ul>
+        <li>
+          <a href="#"><img src="../assets/face.png" alt="face"></a>
+        </li>
+        <li>
+          <a href="#"><img src="../assets/insta.png" alt="insta"></a>
+        </li>
+        <li>
+          <a href="#"><img src="../assets/twi.png" alt="twi"></a>
+        </li>
+        <li>
+          <a href="#"><img src="../assets/insta.png" alt="inst"></a>
+        </li>
+        <li>
+          <a href="#"><img src="../assets/face.png" alt="fac"></a>
+        </li>
+        <li>
+          <a href="#"><img src="../assets/arrowdown.png" alt="top"></a>
+        </li>
+      </ul>
+  </div>
+
+
+    <div class="footer__container">
+      <div class="footer__logoContainer">
+        <a class="logo" href="#"><img src="../assets/logo-3.png" alt="Logo"></a>
+      </div>
+      <div class="footer__section">
+        <h3><a href="">LES ENCHÈRES</a></h3>
+        <p><a href="">Vendre</a></p>
+        <p><a href="">Caractéristiques</a></p>
+        <p><a href="">Prix</a></p>
+        <p><a href="">Témoignages</a></p>
+      </div>
+      <div class="footer__section">
+        <h3><a href="">À PROPOS</a></h3>
+        <p><a href="">Notre team</a></p>
+        <p><a href="">Infos</a></p>
+        <p><a href="">Press</a></p>
+        <p><a href="">Boutique</a></p>
+      </div>
+      <div class="footer__section">
+        <h3><a href="">CONTACT</a></h3>
+        <p><a href="">info@stampee.com</a></p>
+        <p><a href="">888-234-8755</a></p>
+        <p><a href="">2020 St Denis</a></p>
+      </div>
+    </div>
+
+
+    <div class="footer__bottomBar">
+      <div>
+        <p class="footer__copy">&copy; 2023 - Lord Stampee</p>
+        <div class="footer__bottomLinks">
+          <p>Termes & Conditions</p>
+          <p>Cookies & Confidentialité</p>
+          <p>FAQs</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

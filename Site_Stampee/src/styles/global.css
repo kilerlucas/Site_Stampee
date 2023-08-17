@@ -1,0 +1,38 @@
+@import url('./header.css');
+@import url('./contact.css');
+@import url('./footer.css');
+
+:root {
+    --color-primary-500: #2a313d;
+    --color-primary-400: #0a172a;
+    --color-primary-300: #031633;
+    --color-primary-200: #0e1f3b;
+    --color-primary-100: #92a9d2;
+    --gray-100: #cccccc;
+    --white: #FFF
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input,
+button {
+    outline: none;
+}
+
+.active {
+    font-weight: bold;
+    border-bottom: 2px solid var(--color-primary-400);
+}

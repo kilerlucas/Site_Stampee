@@ -1,0 +1,687 @@
+.searchContainer {
+	background-image: url('../assets/filatelia-recolhendo-selos-126075016.jpg');
+	background-size: cover;
+}
+
+.searchContainer__textContainer {
+	display: flex;
+	padding: 16px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--white);
+	width: 100%;
+	margin: 0 auto;
+	background: rgba(10, 23, 42, 0.9);
+}
+
+.searchContainer__date {
+	max-width: 600px;
+	width: 80%;
+	font-size: 10px;
+	padding: 8px;
+}
+
+.searchContainer__title {
+	max-width: 600px;
+	width: 80%;
+	font-family: 'EB Garamond', serif;
+	font-size: 24px;
+	padding: 8px;
+}
+
+.searchContainer__description {
+	max-width: 600px;
+	width: 80%;
+	font-family: 'EB Garamond', serif;
+	font-size: 14px;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+
+.searchContainer__formContainer {
+	max-width: 600px;
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.searchContainer__input {
+	width: 100%;
+	padding: 16px;
+}
+
+.searchContainer__input::placeholder {
+	color: var(--gray-100)
+}
+
+.searchContainer__button {
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.searchContainer__button img {
+	width: 32px;
+}
+
+/* SECTION 2 */
+
+.printempsContainer {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.printempsContainer__titleContainer {
+	padding: 16px;
+	font-weight: bold;
+}
+
+.printempsContainer__title {
+	color: var(--color-primary-400);
+	font-family: 'EB Garamond', serif;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+.printempsContainer__description {
+	color: var(--color-primary-400);
+}
+
+.printempsContainer__link {
+	margin-left: 36px;
+	background-color: var(--color-primary-300);
+	padding: 4px;
+	font-family: 'EB Garamond', serif;
+	color: var(--white);
+	font-size: 10px;
+}
+
+.printempsContainer__link:hover {
+	background-color: var(--color-primary-400);
+}
+
+.printempsContainer__cardsList {
+	padding: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 16px;
+}
+
+.printempsContainer__card {
+	position: relative;
+	width: 120px;
+	height: 200px;
+
+	padding-top: 24px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.printempsContainer__card:hover {
+	box-shadow: 0px 5px 20px rgba(0.6, 0, 0.5, 0.3);
+}
+
+.printempsContainer__card span {
+	position: absolute;
+	top: 5px;
+	left: 0;
+
+	background-color: var(--color-primary-200);
+	padding: 4px;
+	font-family: 'EB Garamond', serif;
+	color: var(--white);
+	font-size: 10px;
+}
+
+.printempsContainer__card img {
+	width: 120px;
+	height: 120px;
+	object-fit: contain;
+}
+
+.printempsContainer__card button {
+	background-color: var(--color-primary-400);
+	border-radius: 5px;
+	padding: 4px;
+	border: none;
+
+	font-size: 8px;
+	color: var(--white);
+	cursor: pointer;
+}
+
+/* SECTION 3 */
+
+.featureContainer {
+	width: 100%;
+	background-color: var(--color-primary-400);
+}
+
+.featureContainer>div {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 16px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+
+.featureContainer img {
+	width: 80px;
+	filter: invert(100%);
+	padding: 16px;
+	border: 3px solid #000;
+}
+
+.featureContainer__textContainer p {
+	font-family: 'EB Garamond', serif;
+	color: var(--white);
+	font-size: 14px;
+}
+
+/* SECTION 4 */
+
+.tendenceContainer {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 48px 16px;
+	gap: 32px;
+}
+
+.tendenceContainer__title {
+	width: 100%;
+	max-width: 800px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--color-primary-400);
+}
+
+.tendenceContainer__title h3 {
+	font-family: 'EB Garamond', serif;
+}
+
+.tendenceContainer__title span {
+	border: 3px solid var(--color-primary-400);
+	padding: 4px 8px;
+	cursor: pointer;
+}
+
+.tendenceContainer__cardsContainer {
+	width: 100%;
+	max-width: 800px;
+	overflow-x: scroll;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.tendenceContainer__card {
+	width: 200px;
+	height: 140px;
+	border: 1px solid var(--gray-100);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.tendenceContainer__card img {
+	width: 80px;
+	height: 100px;
+
+	object-fit: cover;
+}
+
+.tendenceContainer__card span {
+	color: var(--color-primary-400);
+	padding: 4px 8px;
+	font-size: 8px;
+}
+
+.tendenceContainer__card span:nth-of-type(2) {
+	font-weight: bold;
+}
+
+
+/* SECTION 5 */
+.bannerContainer {
+	height: 100px;
+	display: flex;
+	width: 100%;
+}
+
+.bannerContainer__banner {
+	width: 50%;
+}
+
+.bannerContainer div {
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.bannerContainer__banner p {
+	color: var(--white);
+	font-size: 8px;
+}
+
+.bannerContainer__banner p:nth-of-type(2) {
+	font-family: 'EB Garamond', serif;
+	font-size: 24px;
+}
+
+.bannerContainer__banner.first {
+	background-image: url('../assets/pexels-tolga-deniz-aran-11942438.jpg');
+	background-size: cover;
+}
+
+.bannerContainer__banner.second {
+	background-image: url('../assets/pexels-karolina-grabowska-6661035.jpg');
+	background-size: cover;
+	background-position: 0px -230px;
+}
+
+/* SECTION 6 */
+
+.lordContainer {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 48px 16px;
+}
+
+.lordContainer__container {
+	padding: 24px;
+	background-color: var(--color-primary-400);
+	max-width: 800px;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.lordContainer__image {
+	width: 250px;
+}
+
+.lordContainer__text {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	text-align: justify;
+
+	gap: 24px;
+}
+
+.lordContainer__text p {
+	color: var(--white);
+	font-family: 'EB Garamond', serif;
+	font-size: 14px;
+}
+
+/* SECTION 7 */
+
+.plusContainer {
+	width: 100%;
+	background-color: var(--color-primary-400);
+}
+
+.plusContainer__container {
+	padding: 16px 0;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.plusContainer__title {
+	font-family: 'EB Garamond', serif;
+	color: var(--white);
+	font-size: 20px;
+}
+
+.plusContainer__group1 {
+	margin: 16px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+
+.plusContainer__group1Card {
+	width: 49%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	background-color: var(--white);
+	padding-left: 16px;
+	height: 150px;
+}
+
+.plusContainer__group1Card a {
+	color: var(--color-primary-400);
+}
+
+.plusContainer__group1Card a h3 {
+	font-family: 'EB Garamond', serif;
+	font-size: 14px;
+}
+
+.plusContainer__group1Card a p {
+	font-size: 10px;
+	text-align: justify;
+}
+
+.plusContainer__group1Card img {
+	width: 40%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.plusContainer__group2 {
+	margin: 16px 0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.plusContainer__group2Card {
+	width: 32%;
+	height: 200px;
+	background-color: var(--white);
+}
+
+.plusContainer__group2Card a {
+	color: var(--color-primary-400);
+	font-weight: bold;
+}
+
+.plusContainer__group2Card h3 {
+	padding: 8px;
+	font-family: 'EB Garamond', serif;
+	font-size: 14px;
+}
+
+.plusContainer__group2Card p {
+	padding: 0 8px;
+	font-size: 10px;
+	text-align: justify;
+}
+
+.plusContainer__group2Card img {
+	width: 100%;
+
+	height: 100px;
+	object-fit: cover;
+}
+
+@media (max-width:1024px) {
+
+	/* SECTION 1 */
+	.searchContainer__textContainer {
+		padding: 8px 16px;
+	}
+
+	.searchContainer__date {
+		font-size: 8px;
+		padding: 2px;
+	}
+
+	.searchContainer__title {
+		font-size: 16px;
+		padding: 2px;
+	}
+
+	.searchContainer__description {
+
+		font-size: 10px;
+		padding: 2px;
+		margin-bottom: 8px;
+	}
+
+	.searchContainer__input {
+		font-size: 8px;
+		padding: 6px;
+	}
+
+	.searchContainer__button {
+		top: 6px;
+	}
+
+	.searchContainer__button img {
+		width: 16px;
+	}
+
+
+	/* SECTION 2 */
+	.printempsContainer__titleContainer {
+		padding: 8px 16px;
+		font-weight: bold;
+	}
+
+	.printempsContainer__title {
+		font-size: 16px;
+		margin-bottom: 2px;
+	}
+
+	.printempsContainer__description {
+		font-size: 10px;
+		margin-bottom: 2px;
+	}
+
+	.printempsContainer__link {
+		margin-left: 12px;
+		padding: 2px 4px;
+		font-size: 10px;
+	}
+
+	.printempsContainer__cardsList {
+		padding: 8px 16px;
+		gap: 8px;
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.printempsContainer__card {
+		height: 110px;
+		width: 100px;
+		border-radius: 4px;
+		gap: 2px;
+	}
+
+	.printempsContainer__card span {
+		top: 3px;
+		padding: 2px;
+		font-size: 8px;
+	}
+
+	.printempsContainer__card img {
+		width: 80px;
+		height: 80px;
+	}
+
+	.printempsContainer__card button {
+		border-radius: 2px;
+		padding: 2px 4px;
+		font-size: 8px;
+	}
+
+	/* SECTION 3 */
+	.featureContainer>div {
+		padding: 8px 16px;
+		gap: 8px;
+	}
+
+	.featureContainer img {
+		width: 30px;
+		padding: 4px;
+		border: 1px solid #000;
+	}
+
+	.featureContainer__textContainer p {
+		font-size: 10px;
+	}
+
+
+	/* SECTION 4 */
+
+	.tendenceContainer {
+		padding: 8px 16px;
+		gap: 8px;
+	}
+
+	.tendenceContainer__title h3 {
+		font-family: 'EB Garamond', serif;
+		font-size: 16px;
+	}
+
+	.tendenceContainer__title span {
+		border: 1px solid var(--color-primary-400);
+		padding: 2px 4px;
+		font-size: 10px;
+		font-weight: bold;
+	}
+
+	.tendenceContainer__cardsContainer {
+		gap: 4px;
+	}
+
+	.tendenceContainer__card {
+		width: 150px;
+		height: 100px;
+	}
+
+	.tendenceContainer__card img {
+		width: 60px;
+		height: 60px;
+		object-fit: contain;
+	}
+
+	.tendenceContainer__card span {
+		font-size: 8px;
+	}
+
+	/* SECTION 5 */
+
+	.bannerContainer {
+		height: 100%;
+	}
+
+	.bannerContainer div {
+		height: 60px;
+	}
+
+	.bannerContainer__banner p {
+		font-size: 8px;
+	}
+
+	.bannerContainer__banner p:nth-of-type(2) {
+		font-family: 'EB Garamond', serif;
+		font-size: 14px;
+	}
+
+	/* SECTION 6 */
+
+	.lordContainer {
+		padding: 16px;
+	}
+
+	.lordContainer__container {
+		padding: 0;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.lordContainer__image {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+		object-position: 0 0;
+	}
+
+	.lordContainer__text {
+		padding: 16px;
+		gap: 12px;
+	}
+
+	.lordContainer__text p {
+		font-size: 12px;
+	}
+
+	/* SECTION 7 */
+	.plusContainer__container {
+		padding: 8px 16px;
+	}
+
+	.plusContainer__title {
+		font-size: 16px;
+	}
+
+	.plusContainer__group1 {
+		margin: 8px 0;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	.plusContainer__group1Card {
+		width: 100%;
+	}
+
+	.plusContainer__group1Card a h3 {
+		font-size: 12px;
+	}
+
+	.plusContainer__group1Card a p {
+		font-size: 8px;
+	}
+
+	.plusContainer__group2 {
+		margin: 8px 0;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	.plusContainer__group2Card {
+		width: 100%;
+		height: 170px;
+	}
+
+	.plusContainer__group2Card h3 {
+		font-size: 12px;
+	}
+
+	.plusContainer__group2Card p {
+		font-size: 8px;
+	}
+}

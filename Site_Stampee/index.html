@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./src/styles/global.css">
+  <link rel="stylesheet" href="./src/styles/accueil.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+  href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Gloock&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+  <title>Stampee - Accueil</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="headerMessage">
+      <div>
+        <span class="headerMessage__text">FREE UK & Worldwide Postage and Packing on ALL MAIL BID AUCTIONS</span>
+        <div class="headerMessage__languageContainer">
+          <img src="./src/assets/world.svg" alt="" class="headerMessage__languageIcon">
+          <span class="headerMessage__languageText">FR</span>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="headerContainer">
+      <nav>
+        <ul class="headerContainer__categories">
+          <li class="headerContainer__listItem active"><a href="#">ACCUEIL</a></li>
+          <li class="headerContainer__listItem"><a href="#">À PROPORS</a>
+            <ul class="headerContainer__subCategories">
+              <li><a href="#">Notre team</a></li>
+              <li><a href="#">Infos</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Boutique</a></li>
+            </ul>
+          </li>
+          <li class="headerContainer__listItem"><a href="#">ENCHÈRES</a>
+            <ul class="headerContainer__subCategories">
+              <li><a href="#">Vendre</a></li>
+              <li><a href="#">Caractéristiques</a></li>
+              <li><a href="#">Prix</a></li>
+              <li><a href="#">Témoignages</a></li>
+            </ul>
+          </li>
+          <li class="headerContainer__listItem"><a href="./src/pages/galerie.html">TIMBRES</a>
+        </ul>
+      </nav>
+      <a href="#"><img src="./src/assets/logo-3.png" alt="Logo" class="headerContainer__logo"></a>
+      <nav >
+        <ul class="headerContainer__profile">
+          <li class="headerContainer__listItem"><a href="#">SE CONNECTER</a></li>
+          <li class="headerContainer__listItem"><a href="#"><img src="./src/assets/search.svg" alt="find"></a></li>
+          <li class="headerContainer__listItem"><a href="#"><img src="./src/assets/help_FILL0_wght200_GRAD0_opsz48.svg"
+                alt="ask"></a></li>
+          <li class="headerContainer__listItem"><a href="#"><img src="./src/assets/shopping_cart_FILL0_wght200_GRAD0_opsz48.svg"
+                alt="buy"></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="headerModal">
+      <a href="#"><img src="./src/assets/logo-3.png" alt="Logo" class="headerContainer__logo"></a>
+      <button class="headerModal__btn"><img src="./src/assets/burgermenu.svg" alt="">
+      </button>
+      <nav class="headerModal__nav">
+        <ul class="headerModal__list">
+          <li class="headerModal__listItem"><a href="#">ACCUEIL</a></li>
+          <li class="headerModal__listItem">
+            <a href="#">À PROPORS</a>
+            <ul class="headerModal__subCategories">
+              <li><a href="#">Notre team</a></li>
+              <li><a href="#">Infos</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Boutique</a></li>
+            </ul>
+          </li>
+          <li class="headerModal__listItem">
+            <a href="#">ENCHÈRES</a>
+            <ul class="headerModal__subCategories">
+              <li><a href="#">Vendre</a></li>
+              <li><a href="#">Caractéristiques</a></li>
+              <li><a href="#">Prix</a></li>
+              <li><a href="#">Témoignages</a></li>
+            </ul>
+          </li>
+          <li class="headerModal__listItem"><a href="./src/pages/galerie.html">TIMBRES</a></li>
+          <li class="headerModal__listItem"><a href="#">SE CONNECTER</a></li>
+          <li class="headerModal__listItem">
+            <span>
+              <a href="#"><img src="./src/assets/search.svg" alt="find"></a>
+            </span>
+          </li>
+          <li class="headerModal__listItem">
+            <span>
+              <a href="#"><img src="./src/assets/help_FILL0_wght200_GRAD0_opsz48.svg" alt="ask"></a>
+            </span>
+          </li>
+          <li class="headerModal__listItem">
+            <span>
+              <a href="#"><img src="./src/assets/shopping_cart_FILL0_wght200_GRAD0_opsz48.svg" alt="buy"></a>
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+  </header>
+
+  <section class="searchContainer">
+      <div class="searchContainer__textContainer">
+        <p class="searchContainer__date">DEPUIS 1998</p>
+        <h1 class="searchContainer__title">Vous cherchez des timbres rares pour votre collection?</h1>
+        <p class="searchContainer__description">Trouvez les timbres les plus rares pour votre collection grâce à Stampee - notre enchèche hebdomadaire de timbres, de collections et d'objets de collection est là pour vous aider!</p>
+        <form class="searchContainer__formContainer">
+          <input type="text" placeholder="Complétez votre collection" class="searchContainer__input">
+          <button class="searchContainer__button"><img src="./src/assets/search.svg" alt="find"></button>
+        </form>
+      </div>
+  </section>
+
+  <section class="printempsContainer">
+    <div class="printempsContainer__titleContainer">
+      <h2 class="printempsContainer__title">C'est le Printemps</h2>
+      <p class="printempsContainer__description">
+      ajoutez des couleurs à votre collection! <a href="galerie.html" class="printempsContainer__link">Voir tout</a>
+      </p>
+    </div>
+
+    <div  class="printempsContainer__cardsList">
+      <div class="printempsContainer__card">
+        <span>Enchères</span>
+        <img src="./src/assets/4f2ac8a158d95c7c98d68623e94ea762.jpg" alt="Annee 1">
+        <button>PLUS DE DÉTAILS</button>
+      </div>
+      <div class="printempsContainer__card">
+        <span>Enchères</span>
+        <img src="./src/assets/canada-stamp-535-spring-6-1971.jpg" alt="Annee 1">
+        <button>PLUS DE DÉTAILS</button>
+      </div>
+      <div class="printempsContainer__card">
+        <span>Enchères</span>
+        <img src="./src/assets/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L2pvYjc1OC0xMy5wbmc.webp" alt="Annee 1">
+        <button>PLUS DE DÉTAILS</button>
+      </div>
+      <div class="printempsContainer__card">
+        <span>Enchères</span>
+        <img src="./src/assets/POSTE-1975-39.jpg" alt="Annee 1">
+        <button>PLUS DE DÉTAILS</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="featureContainer">
+    <div>
+      <img  src="./src/assets/upload.png" alt="upload">
+      <div class="featureContainer__textContainer">
+        <p >La fonctionnalité de recherche visuelle exclusive vous permet de trouver des timbres similaires
+          à ceux que vous aimez en téléchargeant simplement une image.
+        </p>
+        <p>
+          Essayez-la maintenant et soyez surpris par la ficilité et la rapidité de notre technologie de pointe!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tendenceContainer">
+    <div class="tendenceContainer__title">
+       <h3>Lots tendance</h3> <span>TOUT</span>
+    </div>
+    <div class="tendenceContainer__cardsContainer">
+      <div class="tendenceContainer__card">
+        <img src="./src/assets/01.jpg" alt="Annee 1" class="galleryCard__img">
+        <span>Name</span>
+        <span>$71.00</span>
+      </div>
+      <div class="tendenceContainer__card">
+        <img src="./src/assets/02.jpg" alt="Annee 1" class="galleryCard__img">
+        <span>Name</span>
+        <span>$71.00</span>
+      </div>
+      <div class="tendenceContainer__card">
+        <img src="./src/assets/03.jpg" alt="Annee 1" class="galleryCard__img">
+        <span>Name</span>
+        <span>$71.00</span>
+      </div>
+      <div class="tendenceContainer__card">
+        <img src="./src/assets/04.jpg" alt="Annee 1" class="galleryCard__img">
+        <span>Name</span>
+        <span>$71.00</span>
+      </div>
+      <div class="tendenceContainer__card">
+        <img src="./src/assets/05.jpg" alt="Annee 1" class="galleryCard__img">
+        <span>Name</span>
+        <span>$71.00</span>
+      </div>
+      <div class="tendenceContainer__card">
+        <img src="./src/assets/06.jpg" alt="Annee 1" class="galleryCard__img">
+        <span>Name</span>
+        <span>$71.00</span>
+      </div>
+      <div class="tendenceContainer__card">
+        <img src="./src/assets/07.jpg" alt="Annee 1" class="galleryCard__img">
+        <span>Name</span>
+        <span>$71.00</span>
+      </div>
+      <div class="tendenceContainer__card">
+        <img src="./src/assets/08.jpg" alt="Annee 1" class="galleryCard__img">
+        <span>Name</span>
+        <span>$71.00</span>
+      </div>
+      <div class="tendenceContainer__card">
+        <img src="./src/assets/09.jpg" alt="Annee 1" class="galleryCard__img">
+        <span>Name</span>
+        <span>$71.00</span>
+      </div>
+      <div class="tendenceContainer__card">
+        <img src="./src/assets/10.jpg" alt="Annee 1" class="galleryCard__img">
+        <span>Name</span>
+        <span>$71.00</span>
+      </div>
+      <div class="tendenceContainer__card">
+        <img src="./src/assets/11.jpg" alt="Annee 1" class="galleryCard__img">
+        <span>Name</span>
+        <span>$71.00</span>
+      </div>
+      <div class="tendenceContainer__card">
+        <img src="./src/assets/12.jpg" alt="Annee 1" class="galleryCard__img">
+        <span>Name</span>
+        <span>$71.00</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bannerContainer">
+      <div class="bannerContainer__banner first">
+        <div>
+          <p>TROUVEZ CE QUE VOUS AIMEZ</p>
+          <p>Parcourir tous les timbres</p>
+        </div>
+      </div>
+      <div class="bannerContainer__banner second">
+        <div>
+          <p>NOMS A CONNAÎTRE</p>
+          <p>Collectionneurs vedette</p>
+        </div>
+      </div>
+  </section>
+
+  <section class="lordContainer">
+    <div class="lordContainer__container">
+        <img src="./src/assets/ce647da55a3d18bb57727f0f537469cf.jpg" alt="" class="lordContainer__image">
+
+      <div class="lordContainer__text">
+        <p >Chers collectionneurs,</p>
+        <p >En tant que propriétaire de Stampee, je suis heureux de faire partie de cette communauté
+          passionée de collectionneur de timbres. Nous croyons en la préservation de l'histoire à travers des pièces
+          rares et authentiques qui apportent de la valeur à vos collections. Nous sommes fiers de vous offrir un accès
+          exclusif à notre collection et espérons que vous continuerez à apprécier notre univers unique et fascinant.
+        </p>
+        <p >Cordialement,<br>Le Lord de Stampee</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="plusContainer">
+    <div class="plusContainer__container">
+      <h2 class="plusContainer__title">Plus de Stampee</h2>
+      <div class="plusContainer__group1">
+        <div class="plusContainer__group1Card">
+          <a href="#">
+              <h3>Abonnez vous pour recevoir un courriel hebdomadaire</h3>
+              <p>Toutes les meilleures fonctionnalités, les dernières nouvelles sur les ventes aux enchères à venir, les événements et plus encore</p>
+          </a>
+            <img width="250" height="156" src="./src/assets/il_1588xN.376881413_dfrh.avif" alt="">
+        </div>
+        <div class="plusContainer__group1Card">
+          <a href="#">
+              <h3>Finances du Stampee</h3>
+              <p>Notre équipe interne peut proposer des prêts pour élagir votre collection</p>
+          </a>
+          <img src="./src/assets/money.png" alt="">
+        </div>
+      </div>
+
+      <div class="plusContainer__group2">
+        <div class="plusContainer__group2Card">
+          <img src="./src/assets/best-luxury-resorts-caribbean-turks-1024x576.jpg" alt="">
+          <a href="#">
+              <h3>Immobilier international de Stampee</h3>
+              <p>Villa Parthenope, Punta Cana, République Dominicaine</p>
+          </a>
+        </div>
+
+        <div class="plusContainer__group2Card">
+          <img src="./src/assets/deathtostock_medium6.webp" alt="">
+          <a href="#">
+              <h3>L'éducation du Stampee</h3>
+              <p>Étudiez les conseils en ligne du monde du timbre avec la plus grande maison de vente aux enchères au monde</p>
+          </a>
+        </div>
+        <div class="plusContainer__group2Card">
+          <img src="./src/assets/data-analysis-importance.avif" alt="">
+          <a href="#">
+              <h3>Guides de collecte</h3>
+              <p>Conseils d'experts sur un large éventail de catégories de collecte</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <p class="contact__title">Vous avez besoin d'aide? Notre équipe est là pour vous aider</p>
+    <p class="contact__description">Nos heures d'ouverture sont du lundi au vendredi,<br>de 9h00 à 17h30 heure du Royaume-Uni.
+    </p>
+    <a class="contact__link" href="#">Contactez-nous</a>
+  </section>
+
+<footer>
+  <div class="footer__topBar">
+      <h3 class="footer__topBarTitle">Suivez-nous</h3>
+      <ul>
+        <li>
+          <a href="#"><img src="./src/assets/face.png" alt="face"></a>
+        </li>
+        <li>
+          <a href="#"><img src="./src/assets/insta.png" alt="insta"></a>
+        </li>
+        <li>
+          <a href="#"><img src="./src/assets/twi.png" alt="twi"></a>
+        </li>
+        <li>
+          <a href="#"><img src="./src/assets/insta.png" alt="inst"></a>
+        </li>
+        <li>
+          <a href="#"><img src="./src/assets/face.png" alt="fac"></a>
+        </li>
+        <li>
+          <a href="#"><img src="./src/assets/arrowdown.png" alt="top"></a>
+        </li>
+      </ul>
+  </div>
+
+
+  <div class="footer__container">
+      <div class="footer__logoContainer">
+        <a class="logo" href="#"><img src="./src/assets/logo-3.png" alt="Logo"></a>
+      </div>
+      <div class="footer__section">
+        <h3><a href="">LES ENCHÈRES</a></h3>
+        <p><a href="">Vendre</a></p>
+        <p><a href="">Caractéristiques</a></p>
+        <p><a href="">Prix</a></p>
+        <p><a href="">Témoignages</a></p>
+      </div>
+      <div class="footer__section">
+        <h3><a href="">À PROPOS</a></h3>
+        <p><a href="">Notre team</a></p>
+        <p><a href="">Infos</a></p>
+        <p><a href="">Press</a></p>
+        <p><a href="">Boutique</a></p>
+      </div>
+      <div class="footer__section">
+        <h3><a href="">CONTACT</a></h3>
+        <p><a href="">info@stampee.com</a></p>
+        <p><a href="">888-234-8755</a></p>
+        <p><a href="">2020 St Denis</a></p>
+      </div>
+  </div>
+
+
+  <div class="footer__bottomBar">
+    <div>
+      <p class="footer__copy">&copy; 2023 - Lord Stampee</p>
+      <div class="footer__bottomLinks">
+        <p>Termes & Conditions</p>
+        <p>Cookies & Confidentialité</p>
+        <p>FAQs</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>
